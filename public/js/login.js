@@ -1,7 +1,5 @@
-async function loginFormHandler(event) {
-    event.preventDefault();
-
-    const username = document.querySelector('#user-login').value.trim();
+async function loginFormHandler() {
+    const username = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
     if (username && password) {
@@ -15,12 +13,9 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }
     }
 }
-
-
-document.querySelector('.login-form').addEventListener('submit', loginFormHandler);

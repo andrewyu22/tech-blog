@@ -11,6 +11,7 @@ router.post('/', async(req, res) => {
         });
         req.session.save(() => {
             req.session.loggedIn = true;
+            req.session.user_id = dbUserData.id;
             res.status(200).json(dbUserData);
         });
     } catch (err) {
@@ -23,10 +24,9 @@ router.post('/login', async(req, res) => {
     try {
         const dbUserData = await User.findOne({
             where: {
-                username: req.body.username
+                email: req.body.username
             }
         });
-        console.log("IN HERE");
         if (!dbUserData) {
             res.status(400).json({ message: 'No user with that email address!' });
             return;
@@ -37,9 +37,9 @@ router.post('/login', async(req, res) => {
             res.status(400).json({ message: 'Incorrect password!' });
             return;
         }
-
         req.session.save(() => {
             req.session.loggedIn = true;
+            req.session.user_id = dbUserData.id;
             res.status(200)
                 .json({ user: dbUserData, message: "You are now logged in!" });
         });

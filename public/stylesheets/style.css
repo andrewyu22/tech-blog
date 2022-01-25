@@ -1,0 +1,15 @@
+body {
+    background-color: #d9ead3;
+}
+header {
+    padding: 20px;
+    text-align: center;
+    background: #231010;
+    color: black;
+}
+.main-title {
+    background-color:  #d9ead3;
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px 0 2px #a7a7a7;
+    width: 20%;
+}
