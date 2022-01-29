@@ -2,7 +2,7 @@
 
 ## Description 
 
-A simple tech-blog application using MVC layout
+A simple CMS-style tech blog site using MVC layout. This site allows users to publish articles, new blog posts and allow other users to comment on these new blogs & articles.
 
 Repo: https://github.com/andrewyu22/tech-blog
 
