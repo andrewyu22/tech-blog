@@ -27,7 +27,23 @@ Link: https://guarded-inlet-66016.herokuapp.com/
 ---
 ## Usage 
 
-Add Image
+### HomePage
+![Homepage](public/image/homepage.JPG)
+
+### Sign Up / Log In
+![Signup](public/image/signup.JPG)
+
+![Login](public/image/login.JPG)
+
+### Dashboard
+Click on Dashboard to see your post or Create a new Post. Note: Make sure you are logged in.
+![dashboard](public/image/dashboard.JPG)
+
+You can edit your post by clicking on "Edit post" below "Your Posts"
+![edit-post](public/image/edit-post.JPG)
+
+You can also add a comment by click on the title of the post.
+![comment](public/image/comments.JPG)
 
 ---
 ## License
